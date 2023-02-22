@@ -1,20 +1,18 @@
-#include<main.h>
+#include "main.h"
 /**
- * main - print _putchar
- * is witten by mbugua
- * Return:0
- * 
+ * main - prints _putchar, fllowd by a new linees
+ * Return: Alwys 0 (Success)
  */
-int main(int)
+int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_puchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	char abe[] = "_putchar";
+
+	int c;
+
+	for (c = 0; c < 8; c++)
+	{
+		_putchar(abe[c]);
+	}
 	_putchar('\n');
-	return(0);
+	return (0);
 }
